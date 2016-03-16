@@ -21,6 +21,10 @@ public class Estudiante
         this.nombre = nombre;
         this.correo = correo;
     }
+
+    public Estudiante() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     //métodos set y get
 

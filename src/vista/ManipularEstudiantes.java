@@ -7,6 +7,7 @@ package vista;
 
 import controlador.Control_Mantenimiento_Estudiante;
 
+
 /**
  *
  * @author estudiante
@@ -15,6 +16,7 @@ public class ManipularEstudiantes extends javax.swing.JFrame {
     
     private Control_Mantenimiento_Estudiante cme;
 
+    Control_Mantenimiento_Estudiante controlEstudiante= new Control_Mantenimiento_Estudiante();
     /**
      * Creates new form ManipularEstudiantes
      */
@@ -79,11 +81,11 @@ public class ManipularEstudiantes extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nombre)
                     .addComponent(jt_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(correo)
-                    .addComponent(jt_correo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(33, Short.MAX_VALUE))
+                    .addComponent(jt_correo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(correo))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -140,4 +142,17 @@ public class ManipularEstudiantes extends javax.swing.JFrame {
     private javax.swing.JTextField jt_nombre;
     private javax.swing.JLabel nombre;
     // End of variables declaration//GEN-END:variables
+
+    
+    public void BUSCAR
+    {
+            if(jt_carnet.getText().equals(carnet))
+                {
+                    
+                } else 
+                
+                {
+
 }
+
+
