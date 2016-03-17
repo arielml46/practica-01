@@ -46,7 +46,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         salir.setText("Archivo");
 
-        btsalir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
+        btsalir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
         btsalir.setText("Salir");
         salir.add(btsalir);
 
@@ -54,6 +54,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         estudiante.setText("Estudiantes");
 
+        manipulaest.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.CTRL_MASK));
         manipulaest.setText("Manipular estudiantes");
         estudiante.add(manipulaest);
 
