@@ -9,6 +9,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import java.awt.event.ActionListener;
 import modelo.Estudiante;
+import modelo.MetodosEstudiantes;
 import vista.ManipularEstudiantes;
 /**
  *
@@ -25,8 +26,7 @@ public class Control_Mantenimiento_Estudiante implements ActionListener{
     public final static int ELIMINAR = 7;
     
     Estudiante estudiante= new Estudiante();
-    
-    private JTextField jt_carnet, jt_nombre, jt_correo;
+    MetodosEstudiantes metodosestudiantes;
     private String nombre, carnet, correo; 
     private final ManipularEstudiantes maneja_estudiante;
     
@@ -47,24 +47,25 @@ public class Control_Mantenimiento_Estudiante implements ActionListener{
         switch(codigo)
         {
             case AGREGAR:
-                
+                this.metodosestudiantes.AGREGAR();
             break;
             
             case ELIMINAR:
-            
+                this.metodosestudiantes.ELIMINAR();
           
             break;
             
             case BUSCAR:
-            
+                this.metodosestudiantes.BUSCAR();
             break;
             
             case EDITAR:
-            
+                this.metodosestudiantes.MODIFICAR();
                 
             break;
         
-    }
+         }
     
+    }
 }
 

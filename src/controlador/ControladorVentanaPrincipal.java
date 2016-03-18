@@ -13,7 +13,7 @@ import vista.ManipularEstudiantes;
  */
 public class ControladorVentanaPrincipal implements ActionListener
 {
-    private ManipularEstudiantes manejaEstudiante;
+    private final ManipularEstudiantes manejaEstudiante;
     public ControladorVentanaPrincipal() {
         this.manejaEstudiante = new ManipularEstudiantes();
     }

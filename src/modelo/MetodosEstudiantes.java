@@ -16,7 +16,7 @@ import vista.ManipularEstudiantes;
 public class MetodosEstudiantes 
 {
    
-   private ArrayList <Estudiante> arrayEstudiantes;
+   private final ArrayList <Estudiante> arrayEstudiantes;
    ManipularEstudiantes manipular_estudiantes;
    
    public MetodosEstudiantes(ManipularEstudiantes manipular_estudiantes)
@@ -24,12 +24,13 @@ public class MetodosEstudiantes
         this.manipular_estudiantes=manipular_estudiantes;
       arrayEstudiantes=new ArrayList <Estudiante>();  
     }
-    public void AGREGAR(String informacion[])
-    {
-        Estudiante temporal=new Estudiante(informacion[0],informacion[1],informacion[2]);
-        arrayEstudiantes.add(temporal);
-       
+
+    public void AGREGAR(String informacion[]) {
+          Estudiante temporal=new Estudiante(informacion[0],informacion[1],informacion[2]);
+          arrayEstudiantes.add(temporal);
     }
+    
+    
     public void BUSCAR()
     {
         for(int contador=0; contador<arrayEstudiantes.size(); contador++)
@@ -52,7 +53,7 @@ public class MetodosEstudiantes
     
     }
     
-    EDITAR()
+   
     
     public void ELIMINAR(String arreglo[])
     {
@@ -69,8 +70,8 @@ public class MetodosEstudiantes
           }
       }
     }
+
     
     
 }
 
-}

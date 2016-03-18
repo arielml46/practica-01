@@ -21,11 +21,7 @@ public class Estudiante
         this.nombre = nombre;
         this.correo = correo;
     }
-
-    public Estudiante() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+   
     //métodos set y get
 
     public String getCarnet() 
@@ -56,6 +52,11 @@ public class Estudiante
     public void setCorreo(String correo) 
     {
         this.correo = correo;
+    }
+
+    public String getInformacion()
+    {
+        return " Carnet: " +carnet+" Nombre: "+nombre+" Correo: "+correo;
     }
     
     

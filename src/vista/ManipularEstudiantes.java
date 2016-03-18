@@ -153,16 +153,10 @@ public class ManipularEstudiantes extends javax.swing.JFrame {
     private javax.swing.JLabel nombre;
     // End of variables declaration//GEN-END:variables
 
+    public void mostrarInformacion(String nombre, String correo) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     
-    public void BUSCAR
-    {
-            if(jt_carnet.getText().equals(carnet))
-                {
-                    
-                } else 
-                
-                {
-
 }
-
 
